@@ -16,13 +16,13 @@ buildscript {
     }
 }
 
-//allprojects {
-//    repositories {
-//        google()
-//        mavenCentral()
-//        jcenter() // 필요한 경우 추가
-//    }
-//}
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // 필요한 경우 추가
+    }
+}
 
 //ptask clean(type: Delete) {
 //    delete rootProject.buildDir
