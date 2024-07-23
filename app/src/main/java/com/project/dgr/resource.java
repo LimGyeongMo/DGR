@@ -2,8 +2,6 @@ package com.project.dgr;
 
 import android.content.Context;
 
-import androidx.core.content.ContextCompat;
-
 public class resource {
 
     public final static String PRIMARY_700 = "PRIMARY_700";
@@ -14,11 +12,11 @@ public class resource {
 
     public int getColor(Context context, String colorName){
         switch (colorName) {
-            case PRIMARY_700: return ContextCompat.getColor(context, R.color.color_00BCFF);
-            case PRIMARY_500: return ContextCompat.getColor(context, R.color.color_01CAFF);
-            case PRIMARY_200: return ContextCompat.getColor(context, R.color.color_70D8FF);
-            case PRIMARY_100: return  ContextCompat.getColor(context, R.color.color_ACE7FE);
-            case PRIMARY_50: return ContextCompat.getColor(context, R.color.color_DFF6FF);
+            case PRIMARY_700: return getColor(context, String.valueOf(R.color.color_00BCFF));
+            case PRIMARY_500: return getColor(context, String.valueOf(R.color.color_01CAFF));
+            case PRIMARY_200: return getColor(context, String.valueOf(R.color.color_70D8FF));
+            case PRIMARY_100: return  getColor(context, String.valueOf(R.color.color_ACE7FE));
+            case PRIMARY_50: return getColor(context, String.valueOf(R.color.color_DFF6FF));
         }
         return 0;
     }
