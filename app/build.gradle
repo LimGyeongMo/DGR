@@ -34,6 +34,9 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.findByName('release')
+                groupId = 'com.github.LimGyeongMo'
+                artifactId = 'dgb'
+                version = "0.0.1"
             }
         }
         repositories {
